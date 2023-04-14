@@ -1,0 +1,881 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#home{
+    background: linear-gradient(transparent,rgba(0,0,0,100%)), url(./img/new\ home.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.page_body{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background:linear-gradient(transparent,rgba(0,0,0,0.8)); */
+    height: 8vh;
+    border-bottom: 1px solid #fff;
+    
+}
+
+#menu-btn{
+    display: none;
+}
+
+.home_content{
+    flex:1 1 45rem;
+    width: 80%;
+    /* margin: 0 30px; */
+    color: #ccc;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin: 2% auto;
+}
+.home_content h1{
+    font-size: 90px;
+    text-shadow: 6px 4px 5px black;
+}
+.home_content h1 span{
+    color: #E8630A;
+}
+.home_content p{
+    font-size: 25px;
+    text-shadow: 3px 2px 2px black;
+}
+.home_content p span{
+    font-size: 30px;
+    color: #A31ACB;
+}
+
+/******** Login form CSS Started **********/
+#login-form{
+    display: none;
+}
+.form-box{
+    width:380px;
+    height: 480px;
+    position: relative;
+    margin: 2% auto;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgb(7 145 175 / 55%);
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0px 0px 5px #777;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: #ccc;
+}
+#btn{
+    top:0;
+    left:0;
+    position: absolute;
+    width: 110px;
+    height: 100%   ;
+    background: transparent;
+    border-radius: 30px;
+    transition: 0.4s;
+    box-shadow:0px 0px 5px#12aba4;
+    color: #ccc !important;
+
+}
+.input-group-login{
+    top:150px;
+    position:absolute;
+    width: 280px;
+    transition: 0.4s;
+}
+.input-group-register{
+    top:120px;
+    position:absolute;
+    width: 280px;
+    transition: 0.4s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #1be5dcfa;
+    outline: none;
+    background: transparent;
+    color: #ccc;
+}
+.submit-btn{
+    width: 50%;
+    padding: 8px 20px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #12aba4;
+    color: #ccc;
+}
+.check-box{
+    margin: 40px 10px 32px 0;
+    color: #ccc;
+    font-family:'Montserrat', sans-serif !important;
+    font-size: 8px;
+}
+
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+}
+#register-input{
+    color: #fff;
+    font-size: 15;
+}
+
+/* ABOUT SECTION */
+#about{
+    width: 80%;
+    margin: 0 auto 30px;
+    text-align: center;
+    border-top: 1px solid antiquewhite;
+    background-color: black !important;
+}
+
+.secHeader h1{
+    margin: 30px auto;
+    font-size: 40px;
+    text-align: center;
+    color: #F3c683;
+}
+.secHeader #sec_phrgph{
+    width: 50%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ccc;
+
+}
+.about_row{
+    display: flex;
+    margin: 30px 50px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.about_row:hover{
+    background: linear-gradient(transparent,#6c264d 50%);
+    box-shadow: 0px 0px 8px #6c2626;
+}
+.about_row .about_img img{
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 8px;
+    box-shadow: -2px 2px 2px #12aba4;
+}
+.about_row .about_img img:hover{
+    box-shadow:none;
+}
+#about_img_2 img{
+    box-shadow: 2px -2px 4px #12aba4 ;
+    border-radius: 0px 25px 0px 0px;
+}
+
+.about_row .content{
+    text-align: left;
+    color: #ccc;
+    margin: 20px auto;
+    box-shadow: 2px -2px 4px #85653a8f;
+    border-radius: 0px 25px 0px 0px ;
+    padding: 20px;
+}
+#about_content_2{
+    box-shadow: -2px 2px 3px #85653a8f ;
+    border-radius: 0px 0px 0px 25px;
+}
+
+.about_row .content p{
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+/********** Services Section *******************/
+
+.services{
+    margin: auto;
+    width: 80%;
+    color: antiquewhite;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid antiquewhite;
+    border-bottom: 1px solid antiquewhite;
+}
+#menServices{
+    display: none;
+}
+#womenServices{
+    display: none ;
+}
+#services h1{
+    margin: 30px auto;
+    font-size: 40px;
+}
+#services #services_phrgph{
+    width: 50%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+.serviceMenu{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+}
+.serviceCard{
+    position: relative;
+    height: 150px;
+    width: 260px;
+    background-color: #fff;
+    transition: 0.3s;
+    background-color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 99;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #85653a8f;
+    background-color: black;
+    margin: 45px 15px;
+}
+.serviceCard:hover{
+    height: 250px;
+    background: linear-gradient(transparent,#6c264d 50%);
+}
+.cardImg{
+    position: relative;
+    width: 100%;
+    transform: translateY(-70px);
+    z-index: 99;
+}
+.cardImg img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0px 5px rgb(243, 243, 247);
+    background-size: cover;
+}
+.cardCContent{
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    transform: translateY(-175px);
+    transition: 0.3;
+    opacity: 1;
+    transition: 0.3;
+}
+.cardCContent h2{
+    margin: 10px;
+    
+}
+.serviceCard:hover > .cardCContent{
+    opacity: 1;
+    transform: translateY(-70px);
+    transition: 0.3s;
+}
+.secshow{
+    display: block;
+}
+.close-btn{
+    margin: 20px;
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(transparent,rgba(53, 205, 216, 0.5));
+    color: white;
+    box-shadow: 0px 0px 5px white;
+    margin-bottom: 30px;
+}
+/************** You are loking fore ***********************/
+#booking{
+    width: 80%;
+    margin:auto;
+    color: #fff;
+}
+.booking_row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto 50px;
+}
+
+.man-women{
+    padding: 30px;
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+    /* background: linear-gradient(transparent,#3a1be5); */
+    box-shadow: 0px 0px 10px #85653a8f;
+    margin: 15px;
+}
+.man-women img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px #12aba4;
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+.man-women h1{
+    transform: translateY(-175px);
+    color: #F2E5E5;
+    text-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 150px;
+    
+}
+.man-women img:hover{
+    opacity: 0.9;
+    /* border: 1px solid #fff; */
+    box-shadow: 0px 0px 10px #12aba4;
+}
+/************** Custonmers Reviews ****************/
+#customer-review{
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid antiquewhite;
+    padding-bottom: 50px;
+}
+#customer-review h1{
+color: #F3c683;
+text-align: center;
+margin: 100px 30px 50px;
+font-size: 40px;
+}
+.review-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.review-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    padding: 15px;
+    width: 370px;
+    height: 300px;
+    text-align: center;
+    margin: 20px 10px;
+    box-shadow: 0px 0px 10px #85653a8f;
+    border-radius: 8px;
+}
+.review-card p{
+    letter-spacing: 1px;
+    font-family:cursive;
+    font-size: 13px;
+}
+.review-card h6{
+    font-size: 18px;
+}
+.review-card img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.review-stars .fa{
+    color: #d3ad7f !important;
+    font-size: 1.2rem;
+}
+/************* Footer Section Start *****************/
+#footer{
+    color: #fff;
+    margin: auto ;
+    width:100%;
+    background: linear-gradient(transparent,rgba(18,171,164,0.5)100%);
+}
+.footer_row{
+    margin:50px 50px 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.foter_left{
+    margin: 20px;
+}
+.footer_left h2{
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+.footer_left p{
+    letter-spacing: 1px;
+    margin: 5px;
+    text-align: left !important;
+    padding: 0px !important;
+}
+.footer_right{
+    
+}
+.footer_right .fa-brands{
+    border: 1px solid antiquewhite;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 20px;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer_right .fa-brands:hover{
+    color: rgb(109, 11, 7);
+    border: 1px solid rgb(109, 11, 7);
+    transform: scale(1.2)
+}
+#footer p{
+    text-align: center;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#footer .fa-regular{
+    color: red;
+}
+
+/**************** Media Quiry  ****************************/
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+     /*home page  */
+     .home_content h1{
+        font-size: 60px;
+        text-shadow: 6px 4px 5px black;
+        font-family: 'Dancing Script', cursive;
+    }
+    .home_content p{
+        font-size: 20px;
+        text-shadow: 3px 2px 2px black;
+    }
+    .home_content p span{
+        font-size: 20px;
+        color: #A31ACB;
+    }
+    .nav a{
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    /* about section */
+     #about{
+        width: 100%;
+    }
+    .secHeader h1{
+        margin: 30px auto;
+        font-size: 28px;
+    }
+    .secHeader #sec_phrgph{
+        width: 85%;
+    }
+    .about_row{
+        flex-direction: column;
+    }
+    .about_row .about_img img{
+        padding: 5px;
+        box-shadow: 0px 0px 5px #85653a8f;
+    }
+    .about_row .content  {
+        text-align: center;
+        margin: 20px;
+        box-shadow: none;
+        padding: 8px;
+        justify-content: center !important;
+    }
+    .about_row .content p{
+        text-align: center;
+    }
+    #about_row2{
+       flex-direction: column-reverse;
+    }
+    #about_img_2 img{
+        box-shadow: 0px 0px 5px #85653a8f;
+    }
+    #about_content_2{
+       box-shadow: none;
+       border-radius: none;
+    }
+
+    /* Booking Section */
+    .booking_row{
+        flex-wrap: wrap;
+    }
+    .man-women:hover{
+        font-size: 35px;
+    }
+
+     /* Customer Reviews */
+    #customer-review{
+        width: 100%;
+    }
+    .review-card-container{
+        flex-wrap: wrap;
+    }
+    /* Service Section */
+    .serviceMenu{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px){
+    /*home page  */
+    .home_content h1{
+        margin-top: 30px;
+        font-size: 40px;
+        text-shadow: 6px 4px 5px black;
+        font-family: 'Dancing Script', cursive;
+    }
+    .home_content p{
+        font-size: 20px;
+        text-shadow: 3px 2px 2px black;
+        
+    }
+    .home_content p span{
+        font-size: 20px;
+        color: #A31ACB;
+        /* text-shadow: 2px 1px 1px #E8630A; */
+    }
+   
+    /* Navbar */
+    .navlinks ul li{
+        display: block;
+    }
+    .navlinks ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navlinks{
+        position: absolute;
+        background: #f44336;
+        height: 40vh;
+        width: 100%;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+        display: none;
+    }
+    .navbar .fa{
+        display: block !important;
+        text-align: left;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navlinks ul{
+        padding: 30px
+    };
+    /* Navbar */
+
+    /* login form */
+    .form-box{
+        width: 280px;
+        height: 400px;
+    }
+
+    
+    /* about section */
+    #about{
+        width: 100%;
+    }
+    .secHeader h1{
+        margin: 30px auto;
+        font-size: 28px;
+        
+    }
+    .secHeader #sec_phrgph{
+        width: 85%;
+    }
+    .about_row{
+        flex-direction: column;
+    }
+    .about_row .about_img img{
+        padding: 5px;
+        box-shadow: 0px 0px 5px #85653a8f;
+    }
+    .about_row .content  {
+        text-align: center;
+        margin: 20px;
+        box-shadow: none;
+        padding: 8px;
+        justify-content: center !important;
+    }
+
+    .about_row .content p{
+        text-align: center;
+    }
+    #about_row2{
+       flex-direction: column-reverse;
+    }
+    #about_img_2 img{
+        box-shadow: 0px 0px 5px #85653a8f;
+        
+    }
+    #about_content_2{
+       box-shadow: none;
+       border-radius: none;
+    }
+
+    /* Booking Section */
+    .booking_row{
+        flex-direction: column;
+    }
+    .man-women:hover{
+        font-size: 25px;
+    }
+
+    /* Customer Reviews */
+    #customer-review{
+        width: 100%;
+    }
+    .review-card-container{
+        flex-wrap: wrap;
+    }
+     /* Service Section */
+    .serviceMenu{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+     /*home page  */
+     .home_content{
+        width: 100%;
+     }
+    .home_content h1{
+        margin-top: 30px;
+        font-size: 40px;
+        text-shadow: 6px 4px 5px black;
+        font-family: 'Dancing Script', cursive;
+    }
+    .home_content p{
+        font-size: 20px;
+        text-shadow: 3px 2px 2px black;
+        
+    }
+    .home_content p span{
+        font-size: 20px;
+        color: #A31ACB;
+        /* text-shadow: 2px 1px 1px #E8630A; */
+    }
+     .form-box{
+        width: 280px;
+        height: 400px;
+    }
+    .input-group-login{
+    top:150px;
+    position:absolute;
+    width: 230px;
+    transition: 0.4s;
+    }
+    #login{
+        left: 30px;
+    }
+    .input-group-register{
+        top:90px;
+    }
+    .input-field{
+        padding: 5px 0;
+        margin: 4px 0;
+    }
+     /* Navbar */
+    .navlinks ul li{
+        display: block;
+    }
+    .navlinks ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navlinks{
+        display: none;
+        position: absolute;
+        background: #f44336;
+        height: 40vh;
+        width: 100%;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .navbar .fa{
+        display: block !important;
+        text-align: left;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navlinks ul{
+        padding: 30px
+    };
+    /* Navbar */
+     #about{
+        width: 100%;
+    }
+    .secHeader h1{
+        margin: 30px auto;
+        font-size: 28px;
+    }
+    .secHeader #sec_phrgph{
+        width: 95%;
+    }
+    .about_row{
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    .about_row .about_img img{
+        padding: 5px;
+        box-shadow: 0px 0px 5px #85653a8f;
+    }
+    .about_row .content  {
+        width: 98%;
+        text-align: center;
+        margin: 20px auto;
+        box-shadow: none;
+        /* border-radius: 0px 25px 0px 0px ; */
+        padding: 8px;
+        justify-content: center !important;
+    }
+    .about_row .content p{
+        text-align: center;
+        margin: auto;
+        margin-top: 20px        ;
+    }
+    #about_row2{
+       flex-direction: column-reverse;
+    }
+    #about_img_2 img{
+        box-shadow: 0px 0px 5px #85653a8f;
+    }
+    #about_content_2{
+       box-shadow: none;
+       border-radius: none;
+    }
+
+    /* Booking Section */
+    .booking_row{
+        flex-direction: column;
+    }
+    .man-women:hover{
+        font-size: 25px;
+    }
+    /* Customer Reviews */
+    #customer-review{
+        width: 100%;
+    }
+    .review-card-container{
+        flex-wrap: wrap;
+    }
+     /* Service Section */
+    .serviceMenu{
+        flex-wrap: wrap;
+    }
+
+}
+.navbar{
+    display: block;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    height: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar:hover{
+     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7));
+     border-bottom: 1px solid #12aba4;
+}
+.navbar img{
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.navbar img:hover{
+    border: 1px solid red;
+}
+.navlinks{
+    flex: 1;
+    text-align: left;
+    margin: 0 50px;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.navlinks ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 7px;
+
+}
+.navlinks ul li a:hover{
+    border-bottom: 2px solid red;
+}
+.navbar .fa{
+    display: none;
+}
+.loginbtn{
+    text-decoration: none;
+    padding: 6px 15px !important;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0px 0px 5px #12aba4;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    outline: none;
+}
+
+
+/* https://learngitbranching.js.org/ */
